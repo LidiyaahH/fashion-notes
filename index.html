@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Notes - Explore Your Style, Express Yourself</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>FASHION NOTES</h1>
+                <p class="tagline">Explore Your Style, Express Yourself</p>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                    <li><a href="#fashion-styles" class="nav-link" data-section="fashion-styles">Fashion Styles</a></li>
+                    <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                    <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        
+        <!-- HOME SECTION -->
+        <section id="home" class="section hero-section">
+            <div class="container">
+                <h2 class="hero-title">Discover Your Personal Style</h2>
+                <p class="hero-description">
+                    Find inspiration for your everyday outfits and explore different fashion styles 
+                    that match your personality. From bohemian elegance to classic preppy looks, 
+                    discover the perfect style for you.
+                </p>
+            </div>
+        </section>
+
+        <!-- FASHION STYLES SECTION -->
+        <section id="fashion-styles" class="section articles-section">
+            <div class="container">
+                <h2 class="section-title">Fashion Styles & Inspiration</h2>
+                
+                <!-- FILTER BUTTONS -->
+                <div class="filter-container">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="bohemian">Bohemian</button>
+                    <button class="filter-btn" data-filter="preppy">Preppy</button>
+                    <button class="filter-btn" data-filter="chic">Chic</button>
+                    <button class="filter-btn" data-filter="texas">Texas Style</button>
+                </div>
+
+                <!-- ARTICLES GRID -->
+                <div class="articles-grid">
+                    
+                    <!-- ARTICLE 1: BOHEMIAN -->
+                    <article class="article-card" data-category="bohemian">
+                        <div class="article-image">
+                            <img src="https://images.unsplash.com/photo-1566407511319-bea340c2e02b?w=500&h=400&fit=crop" 
+                                 alt="Bohemian style outfit with flowy dress and boho accessories"
+                                 onerror="this.src='https://via.placeholder.com/500x400?text=Bohemian+Style'">
+                        </div>
+                        <div class="article-content">
+                            <div class="article-category">
+                                <span class="category-badge bohemian-badge">Bohemian</span>
+                                <span class="category-badge boho-fashion-badge">Boho Fashion</span>
+                            </div>
+                            <h3 class="article-title">Exploring the Bohemian Style</h3>
+                            <p class="article-description">
+                                Bohemian style is inspired by free-spirited fashion, earthy colors, 
+                                flowy dresses, crochet textures, and natural accessories.
+                            </p>
+                            <button class="read-more-btn" data-article="bohemian">Read More</button>
+                        </div>
+                    </article>
+
+                    <!-- ARTICLE 2: PREPPY -->
+                    <article class="article-card" data-category="preppy">
+                        <div class="article-image">
+                            <img src="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=500&h=400&fit=crop" 
+                                 alt="Classic preppy outfit with collared shirt and pleated skirt"
+                                 onerror="this.src='https://via.placeholder.com/500x400?text=Preppy+Style'">
+                        </div>
+                        <div class="article-content">
+                            <div class="article-category">
+                                <span class="category-badge preppy-badge">Preppy</span>
+                                <span class="category-badge classic-fashion-badge">Classic Fashion</span>
+                            </div>
+                            <h3 class="article-title">The Classic Preppy Look</h3>
+                            <p class="article-description">
+                                Preppy style features neat and classic clothing, including collared shirts, 
+                                cardigans, pleated skirts, blazers, and loafers.
+                            </p>
+                            <button class="read-more-btn" data-article="preppy">Read More</button>
+                        </div>
+                    </article>
+
+                    <!-- ARTICLE 3: CHIC -->
+                    <article class="article-card" data-category="chic">
+                        <div class="article-image">
+                            <img src="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=500&h=400&fit=crop" 
+                                 alt="Chic minimalist outfit with tailored blazer and neutral colors"
+                                 onerror="this.src='https://via.placeholder.com/500x400?text=Chic+Style'">
+                        </div>
+                        <div class="article-content">
+                            <div class="article-category">
+                                <span class="category-badge chic-badge">Chic</span>
+                                <span class="category-badge minimalist-badge">Minimalist Fashion</span>
+                            </div>
+                            <h3 class="article-title">How to Achieve a Chic Style</h3>
+                            <p class="article-description">
+                                Chic style focuses on elegant and coordinated outfits, neutral colors, 
+                                tailored blazers, trousers, and minimal accessories.
+                            </p>
+                            <button class="read-more-btn" data-article="chic">Read More</button>
+                        </div>
+                    </article>
+
+                    <!-- ARTICLE 4: TEXAS WESTERN -->
+                    <article class="article-card" data-category="texas">
+                        <div class="article-image">
+                            <img src="https://images.unsplash.com/photo-1614613535308-eb5fbd8f2c16?w=500&h=400&fit=crop" 
+                                 alt="Texas western style outfit with cowboy boots and plaid shirt"
+                                 onerror="this.src='https://via.placeholder.com/500x400?text=Texas+Western+Style'">
+                        </div>
+                        <div class="article-content">
+                            <div class="article-category">
+                                <span class="category-badge texas-badge">Texas Style</span>
+                                <span class="category-badge western-badge">Western Fashion</span>
+                            </div>
+                            <h3 class="article-title">Discovering Texas Western Fashion</h3>
+                            <p class="article-description">
+                                Texas style is inspired by Western fashion, featuring denim jeans, 
+                                cowboy boots, cowboy hats, plaid shirts, and statement belts.
+                            </p>
+                            <button class="read-more-btn" data-article="texas">Read More</button>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2 class="section-title">About Fashion Notes</h2>
+                <div class="about-content">
+                    <p>
+                        <strong>Fashion Notes</strong> is a fashion inspiration blog dedicated to helping you 
+                        discover and express your personal style. Whether you're interested in bohemian elegance, 
+                        classic preppy aesthetics, minimalist chic, or western fashion, we have something for everyone.
+                    </p>
+                    <p>
+                        Our mission is to provide stylish outfit ideas, fashion tips, and styling advice 
+                        to help you build a wardrobe that reflects your unique personality and lifestyle.
+                    </p>
+                    <p>
+                        This blog is created as part of an academic project for "Achieving Operational Excellence: 
+                        Creating a Simple Blog" course, showcasing modern web design and development practices.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <p>Have questions or want to collaborate with us? Feel free to reach out!</p>
+                    <div class="contact-info">
+                        <p><strong>Email:</strong> <a href="mailto:fashionnotes@example.com">fashionnotes@example.com</a></p>
+                        <p><strong>Address:</strong> Fashion District, Style City, SC 12345</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ARTICLE MODAL FOR FULL CONTENT -->
+    <div id="articleModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <!-- Content will be inserted by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Fashion Notes. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="script.js"></script>
+</body>
+</html>
